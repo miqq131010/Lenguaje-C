@@ -4,4 +4,5 @@ int main (){
     printf("Ingresa tu nombre: ");
     scanf("%s", &nombre);
     printf("Hola %s , bienvenido", nombre);
+    return 0;
 }
