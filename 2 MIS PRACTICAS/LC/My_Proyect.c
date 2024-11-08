@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 void calculadora() {
+    system("cls");
     double num1, num2, resultado;
     int opcion;
     printf("Selecciona la opcion a realizar\n");
-    printf("1) Suma \n2) Resta\n 3) Multiplicacion\n4) Division\n");
+    printf("1) Suma \n2) Resta\n3) Multiplicacion\n4) Division\n");
     scanf("%i", &opcion);
     printf("Ingrese el primer numero: ");
     scanf("%lf", &num1);
@@ -31,7 +33,8 @@ void calculadora() {
             printf("Opcion invalida\n");
             return;
     }
-    printf("El resultado es: %f\n", resultado);
+    printf("El resultado es: %.2f\n", resultado);
+
 }
 void edad() {
     int edad;
@@ -58,7 +61,10 @@ int main() {
                 break;
             default:
                 printf("Opcion invalida. Intente nuevamente.\n");
+                break;
+                
         }
     }
+
     return 0;
 }
