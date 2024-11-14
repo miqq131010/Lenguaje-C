@@ -1,5 +1,6 @@
 #include <stdio.h> // Libreria estandar de comunicacion con los perifericos
 #include <ctype.h>  // Libreria de funciones para el manejo de caracteres
+#include <stdlib.h>
 int main() {
     char dia[3]; // Defino una variable de tipo char con un tamaño de 3
     system("color 0a"); //Asigno color diferente a la consola
@@ -7,7 +8,7 @@ int main() {
 	printf("     ..:: TAREA MIGUEL DIAZ ::..\n\n"); // Imprimo un mensaje personalizado de autor del proyecto
     printf("Ingrese el dia: \n\nLU\t\tMA\t\tMI\nJU\t\tVI\t\tSA\nDO\n"); // Imprimo un menu de opciones
     printf("_____________________________________\n\n>"); // Imprimo un separador
-    scanf("%2s", dia); //Lee la entrada de texto del usuario y la almacena en la variable dia
+    scanf("%s", dia); //Lee la entrada de texto del usuario y la almacena en la variable dia
     dia[0] = toupper(dia[0]); // Convierte la primera letra a mayuscula
     dia[1] = toupper(dia[1]); // Convierte la segunda letra a mayuscula
     switch (dia[0]) { // Inicia un switch que evalua la primera letra del dia ingresado

@@ -1,0 +1,33 @@
+# Project: Proyecto_Final
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = Proyecto_Final_private.res
+OBJ      = Proyecto_Final.o $(RES)
+LINKOBJ  = Proyecto_Final.o $(RES)
+LIBS     = -L"F:/Programas/Windows/Portables/Apps/DevC/Dev-Cpp/TDM-GCC-64/lib" -L"F:/Programas/Windows/Portables/Apps/DevC/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"F:/Programas/Windows/Portables/Apps/DevC/Dev-Cpp/TDM-GCC-64/include" -I"F:/Programas/Windows/Portables/Apps/DevC/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"F:/Programas/Windows/Portables/Apps/DevC/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"F:/Programas/Windows/Portables/Apps/DevC/Dev-Cpp/TDM-GCC-64/include" -I"F:/Programas/Windows/Portables/Apps/DevC/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"F:/Programas/Windows/Portables/Apps/DevC/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"F:/Programas/Windows/Portables/Apps/DevC/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = Proyecto_Final.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = F:\Programas\Windows\Portables\Apps\DevC\Dev-Cpp\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Proyecto_Final.o: Proyecto_Final.c
+	$(CC) -c Proyecto_Final.c -o Proyecto_Final.o $(CFLAGS)
+
+Proyecto_Final_private.res: Proyecto_Final_private.rc 
+	$(WINDRES) -i Proyecto_Final_private.rc --input-format=rc -o Proyecto_Final_private.res -O coff 
+

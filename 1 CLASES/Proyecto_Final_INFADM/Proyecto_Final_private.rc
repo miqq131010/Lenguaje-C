@@ -4,33 +4,33 @@
 #include <windows.h> // include for version info constants
 
 
-A ICON "Tarea_Miguel_Diaz.ico"
+A ICON "Proyecto_Final.ico"
 
 //
 // TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
 //
 1 VERSIONINFO
-FILEVERSION 1,0,0,2
-PRODUCTVERSION 1,0,0,2
+FILEVERSION 1,0,0,1
+PRODUCTVERSION 1,0,0,1
 FILETYPE VFT_APP
 {
   BLOCK "StringFileInfo"
   {
-    BLOCK "040904E4"
+    BLOCK "4C0A04E4"
     {
-      VALUE "CompanyName", "FB | ANGEL"
-      VALUE "FileVersion", "1.0.0.2"
-      VALUE "FileDescription", "Tarea de informatica"
+      VALUE "CompanyName", "Angel Garcia"
+      VALUE "FileVersion", "1.0.0.1"
+      VALUE "FileDescription", "Proyecto Final - Miguel Diaz"
       VALUE "InternalName", ""
       VALUE "LegalCopyright", "Angel Garcia"
       VALUE "LegalTrademarks", "Angel Garcia"
-      VALUE "OriginalFilename", "Miguel"
-      VALUE "ProductName", "Tarea  informatica"
-      VALUE "ProductVersion", "1.0.0.2"
+      VALUE "OriginalFilename", ""
+      VALUE "ProductName", "Proyecto Final"
+      VALUE "ProductVersion", "1.0.0.1"
     }
   }
   BLOCK "VarFileInfo"
   {
-    VALUE "Translation", 0x0409, 1252
+    VALUE "Translation", 0x4C0A, 1252
   }
 }
