@@ -1,24 +1,3 @@
-
-
-/*
-El cifrado César es uno de los métodos de cifrado más antiguos y simples que se conocen. 
-Consiste en desplazar cada letra del texto original un número fijo de posiciones en el alfabeto. 
-Por ejemplo, con un desplazamiento de 3, la letra 'A' se convierte en 'D', 'B' en 'E', y así sucesivamente. 
-Este tipo de cifrado es un caso particular de la cifra de sustitución, donde cada letra se sustituye por otra letra, 
-y su seguridad radica en la dificultad de adivinar el desplazamiento utilizado. Sin embargo, es relativamente fácil de romper 
-con técnicas de análisis de frecuencia, dado que la distribución de las letras en el texto cifrado sigue siendo similar a la del texto original.
-
-El cifrado César se puede implementar de manera sencilla en diversos lenguajes de programación, 
-y su comprensión es fundamental para entender conceptos más avanzados en criptografía. 
-A pesar de su simplicidad, el cifrado César ha tenido un impacto significativo en la historia de la criptografía 
-y se utiliza a menudo como un ejemplo educativo para introducir a los estudiantes en los principios básicos del cifrado. 
-Aunque hoy en día no se considera seguro para aplicaciones serias, su legado perdura en la cultura popular y en la historia militar.
-
-Este proyecto se presenta como el trabajo final de la asignatura Fundamentos de Programación, 
-donde se busca aplicar los conocimientos adquiridos a lo largo del curso para implementar un algoritmo de cifrado César. 
-El objetivo es reforzar las habilidades de programación y comprensión de algoritmos, así como fomentar la creatividad en la solución de problemas.
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
